@@ -29,12 +29,16 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/rbac", rbacRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/tasks", taskRoutes);
+app.get("/health" , (req , res)=>{
+    res.send("Backend service is healthy")
 
+})
 const startServer = async () => {
     try {
 

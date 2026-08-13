@@ -123,7 +123,7 @@ rbacService.listRoles = async () => {
         permissions: row.permissions,
         createdAt: row.created_at,
         updatedAt: row.updated_at,
-    }));
+    })).filter((role)=>role.name !="admin");
 };
 
 rbacService.getRole = async (roleId) => {
