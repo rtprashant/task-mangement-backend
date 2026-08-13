@@ -1,0 +1,18 @@
+export const ALL_APP_PERMISSIONS = [
+  "users:read",
+  "users:create",
+  "users:update",
+  "users:delete",
+  "roles:read",
+  "roles:create",
+  "roles:update",
+  "roles:delete",
+  "projects:read",
+  "projects:create",
+  "projects:update",
+  "projects:delete",
+  "tasks:read",
+  "tasks:create",
+  "tasks:update",
+  "tasks:delete",
+];
